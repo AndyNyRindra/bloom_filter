@@ -61,7 +61,8 @@ public class BloomFilter {
                 double result = Math.pow((1 - Math.exp(-1.0*(this.hashFunctions.length * nbWords)/this.size)), this.hashFunctions.length);
 
                 // Précision de 6 décimals
-                return (double)Math.round(result * 1000000d) / 1000000d;
+//                return (double)Math.round(result * 1000000d) / 1000000d;
+                return result;
             }
         }
 
